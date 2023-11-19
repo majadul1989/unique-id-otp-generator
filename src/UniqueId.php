@@ -58,16 +58,16 @@ class UniqueId {
         $uniqueNumber = str_replace(".","",$time_start.$unique);
 
         // set max number in a string
-        substr($uniqueNumber,0, $maxLimit);
+        $configLimitNumber = substr($uniqueNumber,0, $maxLimit);
 
         // check here already number exits or not
-        $check = $model::where($field, $unique)->count();
+        $check = $model::where($field, $configLimitNumber)->count();
 
         // set condition in geter than 0
         if($check > 0 ){
             self::uniqueNumber($model, $field, $limitNumber);
         }
-        return $unique;
+        return $configLimitNumber;
     }
 
 }
