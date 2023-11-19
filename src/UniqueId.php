@@ -26,7 +26,7 @@ class UniqueId {
 
         // set condition in geter than 0
         if($check > 0 ){
-            self::uniqueId($model, $field);
+            self::uniqueId($model, $field, $characterNumber);
         }
 
         return $unique;
