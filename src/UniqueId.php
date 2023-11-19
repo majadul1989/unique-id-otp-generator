@@ -65,7 +65,7 @@ class UniqueId {
 
         // set condition in geter than 0
         if($check > 0 ){
-            self::uniqueNumber($model, $field);
+            self::uniqueNumber($model, $field, $limitNumber);
         }
         return $unique;
     }
