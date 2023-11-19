@@ -2,6 +2,7 @@
     "name": "coder-orbit/unique-id-generator",
     "description": "its only use unique id and otp",
     "homepage": "https://github.com/majadul1989/unique-id-otp-generator",
+    "keywords": ["unique","opt", "id","generator"],
     "license": "MIT",
     "autoload": {
         "psr-4": {
