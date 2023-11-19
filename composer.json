@@ -1,0 +1,33 @@
+{
+    "name": "coder-orbit/unique-id-generator",
+    "description": "its only use unique id",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CoderOrbit\\LaravelUniqueId\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Coder Orbit",
+            "email": "majadul.dev@gmail.com",
+            "homepage": "https://www.coderorbit.com"
+        }
+    ],
+
+    "require": {
+            "php": ">= 7.2"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CoderOrbit\\LaravelUniqueId\\UniqueIdServiceProvider"
+            ],
+
+            "aliases": {
+                "UniqueId": "CoderOrbit\\LaravelUniqueId\\UniqueId"
+            }
+        }
+    }
+}
