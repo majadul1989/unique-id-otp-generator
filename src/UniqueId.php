@@ -55,7 +55,7 @@ class UniqueId {
         // get current time to converted seconds
         $time_start = microtime(true);
         // replace dot inside of number
-        $uniqueNumber = str_replace(".","",$time_start.$unique);
+        $uniqueNumber = str_replace(".","",$unique.$time_start);
 
         // set max number in a string
         $configLimitNumber = substr($uniqueNumber,0, $maxLimit);
